@@ -50,6 +50,7 @@ jobs:
         brew install postgresql
         python -m pip install --upgrade pip
         pip install tox
+        pip install .
     - name: Run scancode
       run: scancode -h
     - name: Run Tox
